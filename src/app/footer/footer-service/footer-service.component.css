@@ -1,0 +1,26 @@
+p, h2, h3 {
+  color: rgb(249 200 70);
+}
+
+p {
+  margin: 0.25rem;
+  color: inherit;
+}
+section, a{
+  font-size: 0.8rem;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: circle;
+}
+
+.footer-service::after{
+  content: "";
+  background-color: rgba(255, 255, 255, 0.06);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+}

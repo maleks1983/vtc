@@ -1,0 +1,17 @@
+h2, h3, h4, h5 {
+  color: rgb(249 200 70);
+}
+
+p {
+  margin: 0.25rem;
+}
+.address-image{
+  color: rgb(249 200 70);
+}
+.footer-address::after{
+  content: "";
+  background-color: rgba(255, 255, 255, 0.06);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+}

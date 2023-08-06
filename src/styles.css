@@ -1,0 +1,48 @@
+
+
+
+@font-face {
+  font-family: Avenir Next Demi;
+  src: url("src/assets/font/AvenirNext-DemiBold.ttf") format("truetype");
+}
+
+html{
+
+}
+
+
+a {
+  text-decoration: none;
+  text-decoration-color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+body {
+  font-family: 'Avenir Next Demi', Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bolder;
+  min-width: 500px;
+  min-height: 100vh;
+
+
+}
+body::before{
+  content: "";
+  width: 100vw;
+
+  position: absolute;
+  background-repeat: repeat-x;
+  background-image: url("src/assets/img/ajy.png");
+  background-color: darkgrey;
+  background-size:3%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Segoe UI Black', Arial, sans-serif;
+  font-weight: bolder;
+}

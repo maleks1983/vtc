@@ -1,0 +1,17 @@
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social>li{
+  min-width: 32px;
+  text-align: center;
+}
+
+.social>li:hover{
+  transform: scale(200%);
+}
