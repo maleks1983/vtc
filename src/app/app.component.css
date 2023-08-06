@@ -9,3 +9,7 @@ header, footer{
 .main-layer{
   background-color: #fbfbff;
 }
+
+main{
+  margin-top: 123px;
+}
