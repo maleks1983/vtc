@@ -5,6 +5,8 @@ p, h2, h3 {
 p {
   margin: 0.25rem;
   color: inherit;
+  font-style: oblique;
+  text-indent: 1.5em;
 }
 section, a{
   font-size: 0.8rem;
