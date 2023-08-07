@@ -12,6 +12,7 @@ import { FooterAdressComponent } from './footer/footer-adress/footer-adress.comp
 import { FooterServiceComponent } from './footer/footer-service/footer-service.component';
 import { FooterSocialComponent } from './footer/footer-social/footer-social.component';
 import { HeaderSocialComponent } from './header/header-social/header-social.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HeaderSocialComponent } from './header/header-social/header-social.comp
   imports: [
     BrowserModule,
     CommonModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

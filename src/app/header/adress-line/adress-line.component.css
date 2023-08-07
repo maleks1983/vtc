@@ -1,28 +1,35 @@
-address, ul{
+address, ul {
   margin: 0;
 
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
 
-.header-addressLine-address{
+.header-addressLine-address {
   position: relative;
 }
 
-.header-addressLine-position{
+.header-addressLine-position {
   display: none;
   position: absolute;
 }
 
-.header-addressLine-address:hover .header-addressLine-position{
+.header-addressLine-address:hover .header-addressLine-position {
   display: block;
 
 }
-.header-addressLine-tel:hover{
+
+.header-addressLine-address:hover,
+.header-addressLine-tel:hover {
+  color: rgb(249 200 70);
+}
+
+.header-addressLine-tel:hover {
   transform: scale(150%);
+
 }
 
 

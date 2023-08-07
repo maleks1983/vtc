@@ -14,4 +14,6 @@ a{
 
 .social>li:hover{
   transform: scale(200%);
+  color: rgb(249 200 70);
+
 }
