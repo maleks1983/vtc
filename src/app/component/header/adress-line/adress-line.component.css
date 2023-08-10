@@ -15,6 +15,7 @@ a {
 .header-addressLine-position {
   display: none;
   position: absolute;
+  z-index: 2;
 }
 
 .header-addressLine-address:hover .header-addressLine-position {

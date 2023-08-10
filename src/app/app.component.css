@@ -1,3 +1,4 @@
+
 header, footer {
   /*background-color: rgb(249 200 70);*/
   background-color: #0a0908;
@@ -6,26 +7,19 @@ header, footer {
 }
 
 main {
-  width: 100%;
-}
 
-.main-wrapper {
-  margin-top: 161px;
-}
-
-.main-slider {
-  padding:0;
-  background-color: #fbfbff;
-  flex: 0 0 500px;
-  width: 100%;
+  flex-grow: 1;
 
 }
-.main-slider-wrapper{
-  width: auto;
-  height: 100%;
-  overflow: hidden;
+header{
+  box-shadow: 0 4px 10px rgba(249, 200, 70,0.5);
 }
-.main-service {
-  width: 100%;
-  background-color: #2d231c;
+.main-layer{
+  display: none;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }

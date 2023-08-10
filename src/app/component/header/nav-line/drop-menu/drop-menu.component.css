@@ -1,0 +1,35 @@
+.drop-menu {
+  filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));
+  position: absolute;
+  top: 102%;
+  left: 0;
+  padding-left: 0;
+  width: 25%;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 3% 3%;
+  background-color: #2d231c;
+}
+
+.drop-menu li {
+  padding: 1rem 0;
+  margin: auto;
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.drop-menu li:not(:last-child):after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.drop-menu li:hover a {
+  color: #F9C846E5;
+  transform: scale(120%);
+}

@@ -1,7 +1,6 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
-import {ISlide} from "../../../models/slide";
-import {slide as sl} from "../../../data/carouselData";
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
+import {ISlide} from "../../../../models/slide";
 
 @Component({
   selector: 'app-main-carousel',
@@ -21,7 +20,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
 })
 
 export class MainCarouselComponent implements OnInit {
-  carouselList: ISlide[] = sl;
+  @Input() carouselList: ISlide[];
   currentSlideImage = 0;
 
 
@@ -60,7 +59,7 @@ export class MainCarouselComponent implements OnInit {
   previousSlideImage() {
     this.carouselList[this.currentSlideImage].active = false;
     if (this.currentSlideImage === 0) {
-      this.currentSlideImage = this.carouselList.length-1;
+      this.currentSlideImage = this.carouselList.length - 1;
       console.log(this.currentSlideImage);
     } else {
       this.currentSlideImage = this.currentSlideImage - 1;

@@ -8,21 +8,52 @@ p {
   font-style: oblique;
   text-indent: 1.5em;
 }
-section, a{
+
+section, a {
   font-size: 0.8rem;
 }
-a{
-  text-decoration: none;
-  color: inherit;
+
+.show-div {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-ul{
+
+section:hover .show-div {
+  display: block;
+}
+
+ul {
   list-style: circle;
 }
 
-.footer-service::after{
+.footer-service::after {
   content: "";
   background-color: rgba(255, 255, 255, 0.06);
   height: 3px;
   width: 100%;
   position: absolute;
+}
+
+@keyframes rotate-gear {
+  0% {
+    transform: rotate(180grad);
+  }
+  25% {
+    transform: rotate(135grad);
+  }
+  50% {
+    transform: rotate(90grad);
+  }
+  75% {
+    transform: rotate(45grad);
+  }
+  100% {
+    transform: rotate(0grad);
+  }
+}
+
+.footer-gear:hover {
+  animation: rotate-gear 2s;
 }

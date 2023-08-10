@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-menu-services-component',
@@ -7,13 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MenuServicesComponentComponent implements OnInit{
 
+  @Input() services: any;
   divServices: any[] = [];
 
   ngOnInit(): void {
     this.divServices = new Array(6);
   }
-  // Функція для trackBy, яка повертає ідентифікатор елемента
-  trackByFn(index: number, item: any): number {
-    return item.id; // Замініть 'id' на відповідне поле з вашого об'єкту
-  }
+
+
 }
