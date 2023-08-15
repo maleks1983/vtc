@@ -3,13 +3,13 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {CommonModule} from "@angular/common";
-import {AdressLineComponent} from './component/header/adress-line/adress-line.component';
+import {AddressLineComponent} from './component/header/adress-line/address-line.component';
 import {NavLineComponent} from './component/header/nav-line/nav-line.component';
-import {MainCarouselComponent} from './component/main/main/main-carousel/main-carousel.component';
+import {MainCarouselComponent} from './component/main-carousel/main-carousel.component';
 import {
   MenuServicesComponentComponent
-} from './component/main/main/menu-services-component/menu-services-component.component';
-import {AboutCompanyComponent} from './component/main/main/about-company/about-company.component';
+} from './component/menu-services-component/menu-services-component.component';
+import {AboutCompanyComponent} from './component/about-company/about-company.component';
 import {FooterAdressComponent} from './component/footer/footer-adress/footer-adress.component';
 import {FooterServiceComponent} from './component/footer/footer-service/footer-service.component';
 import {FooterSocialComponent} from './component/footer/footer-social/footer-social.component';
@@ -18,14 +18,17 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RouterModule, RouterOutlet} from "@angular/router";
 import {TableServicesProductComponent} from './component/pages/table-services-product/table-services-product.component';
-import {MainComponent} from './component/main/main/main.component';
+import {MainComponent} from './component/pages/main/main.component';
 import {DropMenuComponent} from './component/header/nav-line/drop-menu/drop-menu.component';
 import {AboutServicePageComponent} from './component/pages/about-service-page/about-service-page.component';
+import { SafeUrlPipe } from './pipe/safe-url.pipe';
+import { MainBlackoutComponent } from './component/main-blackout/main-blackout.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdressLineComponent,
+    AddressLineComponent,
     NavLineComponent,
     MainCarouselComponent,
     MenuServicesComponentComponent,
@@ -38,6 +41,8 @@ import {AboutServicePageComponent} from './component/pages/about-service-page/ab
     MainComponent,
     DropMenuComponent,
     AboutServicePageComponent,
+    SafeUrlPipe,
+    MainBlackoutComponent,
   ],
   imports: [
     BrowserModule,

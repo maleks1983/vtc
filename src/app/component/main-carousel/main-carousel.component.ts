@@ -1,6 +1,6 @@
-import {Component, HostBinding, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
-import {ISlide} from "../../../../models/slide";
+import {ISlide} from "../../models/slide";
 
 @Component({
   selector: 'app-main-carousel',

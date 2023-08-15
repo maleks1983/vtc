@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {IService} from "../../../../models/servic";
+import {IService} from "../../../../models/servicesCompany";
 
 @Component({
   selector: 'app-drop-menu',

@@ -1,4 +1,8 @@
-.carousel-circle-container{
+:host {
+  flex-grow: 1;
+}
+
+.carousel-circle-container {
   position: absolute;
   left: 50%;
   top: 90%;
@@ -8,11 +12,13 @@
   margin: 0;
   padding: 0;
 }
-.carousel-circle{
+
+.carousel-circle {
   width: 16px;
   height: 16px;
 }
-.carousel-circle button{
+
+.carousel-circle button {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -20,16 +26,18 @@
   border-radius: 50%;
   border: 0;
 }
-.carousel-circle button:hover{
+
+.carousel-circle button:hover {
   border: 2px;
 }
-.orangeButton:hover{
- background-color: rgba(232,75,10,0.76);
+
+.orangeButton:hover {
+  background-color: rgba(232, 75, 10, 0.76);
   border-radius: 50%;
   transform: scale(150%);
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;

@@ -1,19 +1,26 @@
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
-.social{
+
+ul {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.social>li{
+li {
   min-width: 32px;
   text-align: center;
 }
 
-.social>li:hover{
+.bg-black li:hover {
   transform: scale(200%);
-  color: rgb(249 200 70);
+  color: #f55536;
+}
 
+.bg-orange li:hover {
+  transform: scale(200%);
+  color: #fbfbff;
 }

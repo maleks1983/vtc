@@ -1,27 +1,23 @@
 
-header, footer {
+footer,
+.header-nav-line {
   /*background-color: rgb(249 200 70);*/
   background-color: #0a0908;
   color: #fbfbff;
 
 }
 
-main {
-
-  flex-grow: 1;
-
-}
-
 header {
   box-shadow: 0 4px 10px rgba(249, 200, 70, 0.5);
+  border-bottom: 2px solid #f55536;
 }
 
-.main-layer {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+
+footer {
+  border-top: 2px solid #f55536;
+}
+
+.orange-address {
+  background-color: #f55536;
+  color: #fbfbff;
 }

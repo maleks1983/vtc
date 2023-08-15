@@ -1,17 +1,22 @@
-<div class="container-fluid d-flex flex-column justify-content-between m-0 p-0 min-vh-100">
-  <header class="w-100 m-0 p-0 position-sticky top-0 z-2">
-    <div class="container d-flex justify-content-between flex-column">
-      <app-adress-line></app-adress-line>
-      <app-nav-line></app-nav-line>
+<div class="container-fluid d-flex flex-column justify-content-between m-0 p-0 min-vh-100 ">
+  <header class="w-100 m-0 p-0 position-sticky top-0 z-2 orange-line">
+    <div class="orange-address">
+      <div class="container d-flex flex-column">
+        <app-address-line></app-address-line>
+      </div>
+    </div>
+    <div class="header-nav-line">
+      <div class="container d-flex flex-column">
+        <app-nav-line></app-nav-line>
+      </div>
     </div>
   </header>
-  <main class="container-fluid flex-grow-1 px-0 d-flex flex-column justify-content-center">
-    <div class="main-layer"></div>
-    <div class="container flex-grow-1">
+  <main class="w-100 flex-grow-1 d-flex align-self-stretch">
+    <div class="container flex-grow-1 position-relative">
       <router-outlet></router-outlet>
     </div>
   </main>
-  <footer class="container-fluid m-0 py-3 px-0">
+  <footer class="w-100 m-0 py-3 px-0">
     <div class="container d-flex flex-column ">
       <div>
         <app-footer-adress></app-footer-adress>
@@ -24,6 +29,5 @@
       </div>
     </div>
   </footer>
-  <div class="main-layer"></div>
 </div>
 

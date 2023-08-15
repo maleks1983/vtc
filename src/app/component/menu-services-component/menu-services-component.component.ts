@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {IService} from "../../models/servicesCompany";
 
 @Component({
   selector: 'app-menu-services-component',
@@ -7,11 +8,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class MenuServicesComponentComponent implements OnInit{
 
-  @Input() services: any;
-  divServices: any[] = [];
+  @Input() service: IService;
 
   ngOnInit(): void {
-    this.divServices = new Array(6);
+
   }
 
 

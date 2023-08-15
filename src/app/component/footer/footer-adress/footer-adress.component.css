@@ -5,13 +5,46 @@ h2, h3, h4, h5 {
 p {
   margin: 0.25rem;
 }
-.address-image{
+
+
+.address-image {
   color: rgb(249 200 70);
 }
-.footer-address::after{
+
+.footer-contact::after {
   content: "";
   background-color: rgba(255, 255, 255, 0.06);
   height: 3px;
   width: 100%;
   position: absolute;
+}
+
+.footer-contact--ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.footer-telephone--p {
+  display: none;
+}
+
+.footer-address--p {
+  display: none;
+}
+
+.footer-schedule--p {
+  display: none;
+}
+
+.footer-telephone:hover .footer-telephone--p {
+  display: block;
+}
+
+.footer-address:hover .footer-address--p {
+  display: block;
+}
+
+.footer-schedule:hover .footer-schedule--p {
+  display: block;
 }

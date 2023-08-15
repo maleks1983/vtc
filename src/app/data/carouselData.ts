@@ -24,17 +24,4 @@ export const slide: ISlide[] = [
   }
 ]
 
-export const contactData = {
-  address: {
-    name: 'м.Вінниця, вул. Енергетична, 3',
-    href:'https://goo.gl/maps/vjyVTNyufHLjTx6h6'
-  },
-  telephone: {
-    name: '+38(097)97-97-554',
-    href: 'tel:+380979797554'
-  },
-  email:{
-    name:'VTC@gmail.com',
-    href:'mailto:VTC@gmail.com'
-  }
-}
+

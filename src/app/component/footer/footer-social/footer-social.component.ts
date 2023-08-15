@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ICompany} from "../../../models/company";
+import {contactData} from "../../../data/companyData";
 
 @Component({
   selector: 'app-footer-social',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class FooterSocialComponent {
 
+  company: ICompany
+
+  ngOnInit(): void {
+    this.company = contactData;
+  }
 }

@@ -1,0 +1,28 @@
+<div class="w-100 d-flex justify-content-between my-2 p-1">
+  <address class="header-addressLine-address">
+    <a [href]="company.address.href">
+      {{company.address.name}}
+    </a>
+    <iframe class="header-addressLine-position"
+            [src]="company.positionGoogle | safeUrl"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+  </address>
+  <address class="header-addressLine-tel">
+    <a [href]="company.telephone.href">
+      {{company.telephone.name}}
+    </a>
+  </address>
+  <address>
+    <app-header-social
+      [socialCompany]="company.social"
+      [bgIsOrange]="true"
+    ></app-header-social>
+  </address>
+</div>

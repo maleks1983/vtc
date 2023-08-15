@@ -27,6 +27,7 @@
     [hidden]="!isActive"
     (mouseleave)="closeDropMenu()">
   </app-drop-menu>
+
   <form class="flex-grow-1 d-flex justify-content-end">
     <div class="flex-grow-1 d-flex flex-column justify-content-center">
       <div>
@@ -40,3 +41,4 @@
   </form>
 
 </nav>
+<app-main-blackout *ngIf="isActive"></app-main-blackout>

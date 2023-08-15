@@ -4,12 +4,11 @@ ul, p {
 
 nav {
   background-color: #2d231c;
-
 }
 
 .nav-logo:hover,
 .nav-menu li:hover a {
-  color: rgb(249 200 70);
+  color: #f55536;
 }
 
 .nav-menu li:hover,
@@ -36,6 +35,10 @@ nav {
   background-color: rgb(249 200 70);
 }
 
+.form-btn--cons:hover {
+  background-color: #f55536;
+  color: #fbfbff;
+}
 
 
 .nav-menu {
@@ -45,6 +48,7 @@ nav {
   align-items: stretch;
   justify-content: center;
   padding-left: 0;
+
 }
 
 .nav-menu li {
@@ -65,4 +69,6 @@ nav {
   position: absolute;
   right: 0;
 
+
 }
+

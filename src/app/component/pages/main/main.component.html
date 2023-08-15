@@ -1,0 +1,19 @@
+<div class="d-flex flex-column w-100 h-100 align-items-sm-stretch">
+  <div class="main-slider">
+    <div class="main-slider-wrapper ">
+      <app-main-carousel [carouselList]="carouselList"></app-main-carousel>
+    </div>
+  </div>
+  <div class="container main-service">
+    <div class="w-100 h-100 py-4 d-flex flex-wrap justify-content-center gap-3 text-black">
+      <app-menu-services-component class="company-service"
+        *ngFor="let ser of services"
+        [service]="ser">
+      </app-menu-services-component>
+    </div>
+
+  </div>
+  <div class="container main-company">
+    <app-about-company></app-about-company>
+  </div>
+</div>

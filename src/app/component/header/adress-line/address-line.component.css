@@ -1,6 +1,5 @@
 address, ul {
   margin: 0;
-
 }
 
 a {
@@ -21,11 +20,6 @@ a {
 .header-addressLine-address:hover .header-addressLine-position {
   display: block;
 
-}
-
-.header-addressLine-address:hover,
-.header-addressLine-tel:hover {
-  color: rgb(249 200 70);
 }
 
 .header-addressLine-tel:hover {
