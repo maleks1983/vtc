@@ -65,7 +65,7 @@ import { MainBlackoutComponent } from './component/main-blackout/main-blackout.c
       },
       {
         path: '**',
-        redirectTo: ""
+        redirectTo:''
       },
     ])
 
