@@ -12,6 +12,7 @@ import {AppComponent} from "../../../app.component";
 export class NavLineComponent implements OnInit {
   services: IService[] = [];
   isActive = false;
+  isActiveMenu = false;
 
   ngOnInit(): void {
     this.services = sv;
@@ -24,6 +25,16 @@ export class NavLineComponent implements OnInit {
 
   closeDropMenu() {
     this.isActive = false;
+
+  }
+
+  openMenu() {
+    this.isActiveMenu = true;
+
+  }
+
+  closeMenu() {
+    this.isActiveMenu = false;
 
   }
 }

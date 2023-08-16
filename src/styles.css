@@ -3,6 +3,10 @@
   src: url("src/assets/font/AvenirNext-DemiBold.ttf") format("truetype");
 }
 
+html {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
   text-decoration-color: inherit;
@@ -16,32 +20,17 @@ ul {
 
 body {
   font-family: 'Avenir Next Demi', Arial, sans-serif;
-  font-size: 1em;
+  font-size: 11px;
+  line-height: 1.35;
   font-weight: bolder;
+
 }
 
-.container-fluid{
-  min-width: 600px;
-}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Segoe UI Black', Arial, sans-serif;
   font-weight: bolder;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.05rem;
-}
 
 

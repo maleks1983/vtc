@@ -1,44 +1,61 @@
-<nav class="nav d-flex justify-content-between px-2 py-2 align-items-sm-stretch h-100 position-relative"
-     (mouseleave)="closeDropMenu()">
-  <div class="nav-logo">
-    <a class="nav-logo" href="/">
-      <img src="./assets/img/logo.png" alt="logo">
-    </a>
-  </div>
-  <ul class="nav-menu">
-    <li
-      (mouseenter)="openDropMenu()"
-    >
-      <a href="#">Послуги</a>
-    </li>
-    <li
-      (mouseenter)="closeDropMenu()">
-      <a routerLink="/price">Ціни</a>
-    </li>
-    <li>
-      <a routerLink="/serviceInfo">Про сервіс</a>
-    </li>
-    <li>
-      <a href="#">Контакти</a>
-    </li>
-  </ul>
-  <app-drop-menu
-    [servicesList]="services"
-    [hidden]="!isActive"
-    (mouseleave)="closeDropMenu()">
-  </app-drop-menu>
-
-  <form class="flex-grow-1 d-flex justify-content-end">
-    <div class="flex-grow-1 d-flex flex-column justify-content-center">
-      <div>
-        <input type="text" name="search" class="rounded w-75">
-        <input type="image" src="./assets/img/search.svg" name="submit" alt="search" class="search-btn">
+<nav
+  (mouseleave)="closeDropMenu();  closeMenu()">
+  <button class="menu__mobile-btn"
+          (click)="openMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+         viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+  </button>
+  <div class="nav__menu" *ngIf="isActiveMenu">
+    <div class="nav__logo">
+      <div class="d-flex align-content-stretch px-2">
+        <a class="nav__logo-a" [href]="">
+          <img src="./assets/img/logo.png" alt="logo">
+        </a>
       </div>
+      <h1 class="px-4">
+        Vinnytsia Transmission Centre
+      </h1>
     </div>
-    <button class="rounded form-btn--cons">
-      Консультація
-    </button>
+    <div class="position-relative">
+      <ul class="nav__content-ul">
+        <li
+          (mouseenter)="openDropMenu()">
+          <a href="#">Послуги</a>
+        </li>
+        <li
+          (mouseenter)="closeDropMenu()">
+          <a routerLink="/price">Ціни</a>
+        </li>
+        <li>
+          <a routerLink="/serviceInfo">Про сервіс</a>
+        </li>
+        <li>
+          <a href="#">Контакти</a>
+        </li>
+      </ul>
+      <app-drop-menu
+        [servicesList]="services"
+        [hidden]="!isActive"
+        (mouseleave)="closeDropMenu()">
+      </app-drop-menu>
+    </div>
+
+  </div>
+
+
+  <form>
+    <div class="w-100 h-100 d-flex justify-content-center">
+      <input type="text" name="search" class="rounded w-100">
+      <input type="image" src="./assets/img/search.svg" name="submit" alt="search" class="search-btn">
+    </div>
   </form>
 
+  <button class="rounded btn--cons">
+    Консультація
+  </button>
+
 </nav>
-<app-main-blackout *ngIf="isActive"></app-main-blackout>
+<app-main-blackout *ngIf="isActiveMenu"></app-main-blackout>

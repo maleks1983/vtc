@@ -2,16 +2,24 @@ import {ICompany} from "../models/company";
 
 export const contactData: ICompany = {
   address: {
+    img_src: './assets/img/icons/location.svg',
     name: 'м.Вінниця, вул. Енергетична, 3',
     href: 'https://goo.gl/maps/vjyVTNyufHLjTx6h6'
   },
   telephone: {
+    img_src: './assets/img/icons/telephone.svg',
     name: '+38(097)97-97-554',
     href: 'tel:+380979797554'
   },
   email: {
+    img_src: './assets/img/icons/telephone.svg',
     name: 'VTC@gmail.com',
     href: 'mailto:VTC@gmail.com'
+  },
+  schedule: {
+    img_src: './assets/img/icons/location.svg',
+    name: 'VTC@gmail.com',
+    list: 'Пн-Пт: з 09:00 до 18:00'
   },
   positionGoogle: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d547.3372788128904!2d28.495085882243025!3d49.265215029970285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d44aa268ad505%3A0xf4a0375f8db2b632!2sCarChoice!5e0!3m2!1sru!2sua!4v1691313880472!5m2!1sru!2sua',
   social: {

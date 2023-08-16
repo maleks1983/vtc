@@ -1,33 +1,26 @@
-<div class="container-fluid d-flex flex-column justify-content-between m-0 p-0 min-vh-100 ">
-  <header class="w-100 m-0 p-0 position-sticky top-0 z-2 orange-line">
-    <div class="orange-address">
-      <div class="container d-flex flex-column">
-        <app-address-line></app-address-line>
-      </div>
+<header>
+  <div class="orange__address">
+    <div class="orange__address-wrapper">
+      <app-address-line></app-address-line>
     </div>
-    <div class="header-nav-line">
-      <div class="container d-flex flex-column">
-        <app-nav-line></app-nav-line>
-      </div>
+  </div>
+  <div class="header__nav-line">
+    <div class="header__nav-line-wrapper">
+      <app-nav-line></app-nav-line>
     </div>
-  </header>
-  <main class="w-100 flex-grow-1 d-flex align-self-stretch">
-    <div class="container flex-grow-1 position-relative">
-      <router-outlet></router-outlet>
-    </div>
-  </main>
-  <footer class="w-100 m-0 py-3 px-0">
-    <div class="container d-flex flex-column ">
-      <div>
-        <app-footer-adress></app-footer-adress>
-      </div>
-      <div>
-        <app-footer-service></app-footer-service>
-      </div>
-      <div>
-        <app-footer-social></app-footer-social>
-      </div>
-    </div>
-  </footer>
-</div>
+  </div>
+</header>
+<main>
+  <div class="main-wrapper">
+<!--    <router-outlet></router-outlet>-->
+  </div>
+</main>
+<footer>
+  <div class="footer-wrapper">
+<!--    <app-footer-adress></app-footer-adress>-->
+<!--    <app-footer-service></app-footer-service>-->
+<!--    <app-footer-social></app-footer-social>-->
+  </div>
+</footer>
+
 

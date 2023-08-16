@@ -1,35 +1,84 @@
-.drop-menu {
-  filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));
+:host {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 102%;
   left: 0;
-  padding-left: 0;
-  width: 25%;
-  border: 1px solid #e0e0e0;
-  border-radius: 0 0 3% 3%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
   background-color: #2d231c;
 }
 
-.drop-menu li {
-  padding: 1rem 0;
-  margin: auto;
-  position: relative;
-  width: 70%;
+ul {
+  flex-grow: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
 }
 
-.drop-menu li:not(:last-child):after {
-  content: '';
-  width: 100%;
+ul li {
+  flex-basis: 52px;
+  font-size: 1.2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+ul li:before {
+  width: 1.4em;
+  height: 1.4em;
+  content: "";
+  margin-right: 3em;
+  background-image: url("src/assets/img/1119298-f9c846.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+ul li:not(:last-child):after {
+  content: "";
   height: 3px;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
 }
 
-.drop-menu li:hover a {
-  color: #f55536;
-  transform: scale(120%);
-}
+/*.drop-menu {*/
+/*  filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));*/
+/*  position: absolute;*/
+/*  top: 102%;*/
+/*  left: 0;*/
+/*  padding-left: 0;*/
+/*  width: 25%;*/
+/*  border: 1px solid #e0e0e0;*/
+/*  border-radius: 0 0 3% 3%;*/
+/*  background-color: #2d231c;*/
+/*}*/
+
+/*.drop-menu li {*/
+/*  padding: 1rem 0;*/
+/*  margin: auto;*/
+/*  position: relative;*/
+/*  width: 70%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.drop-menu li:not(:last-child):after {*/
+/*  content: '';*/
+/*  width: 100%;*/
+/*  height: 3px;*/
+/*  background-color: rgba(255, 255, 255, 0.5);*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  bottom: 0;*/
+/*}*/
+
+/*.drop-menu li:hover a {*/
+/*  color: #f55536;*/
+/*  transform: scale(120%);*/
+/*}*/

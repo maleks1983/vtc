@@ -1,23 +1,48 @@
+:host {
+  min-width: 370px;;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(100px, max-content) max-content  minmax(20%, auto);
+  row-gap: .5%;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(249, 200, 70, 0.5);
+  border-bottom: 2px solid #f55536;
+  display: grid;
+  grid-template-rows: 35px 1fr;
+  font-size: 1.2727em;
+}
+
+.main-wrapper,
+.orange__address-wrapper,
+.header__nav-line-wrapper,
+.footer-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+footer {
+  border-top: 2px solid #f55536;
+
+}
 
 footer,
-.header-nav-line {
+.header__nav-line {
   /*background-color: rgb(249 200 70);*/
   background-color: #0a0908;
   color: #fbfbff;
 
 }
 
-header {
-  box-shadow: 0 4px 10px rgba(249, 200, 70, 0.5);
-  border-bottom: 2px solid #f55536;
-}
 
-
-footer {
-  border-top: 2px solid #f55536;
-}
-
-.orange-address {
+.orange__address {
   background-color: #f55536;
   color: #fbfbff;
 }
