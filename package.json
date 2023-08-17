@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --output-path docs --base-href vtc/vtc"
+    "deploy": "ng build --output-path docs --base-href vtc"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +22,9 @@
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@ng-bootstrap/ng-bootstrap": "^15.1.0",
     "@popperjs/core": "^2.11.6",
+    "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
+    "jssoup": "^0.0.15",
     "router": "^1.3.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
