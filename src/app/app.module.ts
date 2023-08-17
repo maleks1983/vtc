@@ -70,11 +70,11 @@ import { ContactsComponent } from './component/pages/contacts/contacts.component
       },
       {
         path: 'contacts',
-        redirectTo: 'ContactsComponent'
+        component: ContactsComponent
       },
       {
         path: '**',
-        redirectTo: 'MainComponent'
+        redirectTo: ''
       },
 
     ])

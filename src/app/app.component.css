@@ -2,7 +2,7 @@
   min-width: 370px;
   min-height: 100%;
   display: grid;
-  grid-template-rows: 100px calc(100% - 100px)  minmax(20%, auto);
+  grid-template-rows: 100px minmax(calc(100vh - 400px), calc(100% - 400px))  300px;
   row-gap: .1%;
 }
 
