@@ -7,7 +7,8 @@ export const services: IService[] = [
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 1',
     description: '',
-    price: 111
+    price: 111,
+    href: '/'
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ export const services: IService[] = [
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 2',
     description: '',
-    price: 111
+    price: 111,
+    href: '/'
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ export const services: IService[] = [
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 3',
     description: '',
-    price: 111
+    price: 111,
+    href: '/'
   },
   {
     id: 4,
@@ -31,7 +34,8 @@ export const services: IService[] = [
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 4',
     description: '',
-    price: 111
+    price: 111,
+    href: '/'
   },
   {
     id: 5,
@@ -39,7 +43,8 @@ export const services: IService[] = [
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 5',
     description: '',
-    price: 111
+    price: 111,
+    href: '/'
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ export const services: IService[] = [
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 6',
     description: '',
-    price: 111
+    price: 111,
+    href: '/'
   },
 ]

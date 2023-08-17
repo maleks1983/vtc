@@ -5,5 +5,6 @@ export interface IService {
   alt: string,
   description: string,
   price: number;
+  href: string;
 }
 
