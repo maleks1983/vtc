@@ -2,8 +2,8 @@
   min-width: 370px;
   min-height: 100%;
   display: grid;
-  grid-template-rows: 100px max-content  minmax(20%, auto);
-  row-gap: .2%;
+  grid-template-rows: 100px calc(100% - 100px)  minmax(20%, auto);
+  row-gap: .1%;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
   top: 0;
   left: 0;
   z-index: 4;
-  box-shadow: 0 4px 10px rgba(249, 200, 70, 0.5);
+  filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));
   border-bottom: 2px solid #f55536;
   display: grid;
   grid-template-rows: 35px 1fr;

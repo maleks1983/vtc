@@ -51,6 +51,7 @@ ul li:not(:last-child):after {
 ul li:hover a {
   color: #f55536;
   transform: scale(120%);
+  filter: drop-shadow(0 10px 8px #f55536);
 }
 
 @media (min-width: 725px) {

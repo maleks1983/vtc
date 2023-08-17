@@ -1,11 +1,16 @@
+:host {
+
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
 ul {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -21,6 +26,15 @@ li {
 }
 
 .bg-orange li:hover {
-  transform: scale(200%);
-  color: #fbfbff;
+  transform: scale(150%);
+}
+
+.bg-orange li:hover i {
+  color: #f9c846;
+
+}
+
+
+i {
+  transform: scale(142%);
 }

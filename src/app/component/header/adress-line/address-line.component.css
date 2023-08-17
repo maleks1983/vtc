@@ -17,7 +17,7 @@ address, ul {
 }
 
 
-.header-addressLine-position {
+.header__addressLine__position {
   width: 95vw;
   height: 70vh;
   border: 0;
@@ -28,16 +28,15 @@ address, ul {
   z-index: 2;
 }
 
-.contact__details-locations:hover .header-addressLine-position {
+.contact__details-locations:hover .header__addressLine__position {
   display: block;
 }
 
 
 .address__img svg {
-  color: rgb(255, 255, 255);
+  color: #fbfbff;
   width: 20px;
   height: 20px;
-
 }
 
 .address__text-location,
@@ -63,13 +62,19 @@ address, ul {
 
 }
 
+.contact__details__social {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+
+}
+
 @media (min-width: 500px) {
   :host {
     grid-template-columns: 25% 40% 35%;
-
   }
 
-  .header-addressLine-position {
+  .header__addressLine__position {
     left: -200%;
   }
 
@@ -81,12 +86,11 @@ address, ul {
     grid-template-columns: 40% 30% 30%;
   }
 
-  .header-addressLine-position {
+  .header__addressLine__position {
     left: 0;
     width: 600px;
     height: 450px;
   }
-
 
   .address__img {
     display: none;

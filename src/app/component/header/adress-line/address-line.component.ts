@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ICompany} from "../../../models/company";
 import {contactData} from "../../../data/companyData";
 
@@ -10,7 +10,6 @@ import {contactData} from "../../../data/companyData";
 export class AddressLineComponent implements OnInit {
 
   company: ICompany
-
 
   ngOnInit(): void {
     this.company = contactData;

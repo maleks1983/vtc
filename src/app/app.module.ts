@@ -24,6 +24,7 @@ import {MainBlackoutComponent} from './component/main-blackout/main-blackout.com
 import {DropMenuComponent} from "./component/header/navbar/drop-menu/drop-menu.component";
 import {NavLineMobileComponent} from "./component/header/navbar/nav-line-mobile/nav-line-mobile.component";
 import {NavLineComponent} from "./component/header/navbar/nav-line/nav-line.component";
+import { ContactsComponent } from './component/pages/contacts/contacts.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import {NavLineComponent} from "./component/header/navbar/nav-line/nav-line.comp
     SafeUrlPipe,
     MainBlackoutComponent,
     NavLineMobileComponent,
+    ContactsComponent,
 
   ],
   imports: [
@@ -67,9 +69,14 @@ import {NavLineComponent} from "./component/header/navbar/nav-line/nav-line.comp
         component: AboutServicePageComponent
       },
       {
+        path: 'contacts',
+        redirectTo: 'ContactsComponent'
+      },
+      {
         path: '**',
         redirectTo: 'MainComponent'
       },
+
     ])
 
   ],

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {IService} from "../../../../models/servicesCompany";
 import {services as sv} from "../../../../data/servicesData";
+import {style} from "@angular/animations";
 
 
 @Component({
@@ -14,8 +15,8 @@ export class NavLineComponent implements OnInit {
   isActive = false;
   logo = "./assets/img/logo.png";
 
-  btnColor = '#F9C846FF'
-  btnColorActive = '#f55536'
+  searchIcon = './assets/img/search.svg';
+
 
   ngOnInit(): void {
     this.services = sv;

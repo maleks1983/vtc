@@ -1,8 +1,8 @@
 <nav>
   <div class="nav__menu">
-    <div class="nav__logo">
-      <div class="h-100 px-2">
-        <a class="nav__logo-a " [href]="">
+    <div class="nav__logo" (mouseenter)="closeDropMenu()">
+      <div class="h-100 px-2 d-flex align-items-stretch">
+        <a  [href]="'/'">
           <img [src]=logo alt="logo" class="img-fluid">
         </a>
       </div>
@@ -21,7 +21,7 @@
           <a routerLink="/serviceInfo">Про сервіс</a>
         </li>
         <li>
-          <a href="#">Контакти</a>
+          <a href="/contacts">Контакти</a>
         </li>
       </ul>
       <app-drop-menu
@@ -36,12 +36,12 @@
   <form>
     <div class="w-100 h-100 d-flex justify-content-center py-2">
       <input type="text" name="search" class="rounded w-100">
-      <input type="image" src="../../../../../assets/img/search.svg" name="submit" alt="search" class="search-btn">
+      <input type="image" [src]="searchIcon" name="submit" alt="search" class="search-btn">
     </div>
   </form>
 
-  <button class="rounded my-2 h-auto"
-          [style.background-color]="btnColor">
+  <button class="rounded my-2 h-auto consultation-btn">
+
     Консультація
   </button>
 

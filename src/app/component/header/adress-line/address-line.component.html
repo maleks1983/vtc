@@ -12,12 +12,11 @@
       {{company.address.name}}
     </a>
   </div>
-  <iframe class="header-addressLine-position"
+  <iframe class="header__addressLine__position"
           [src]="company.positionGoogle | safeUrl"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
-
   </iframe>
 
 </address>
@@ -36,10 +35,10 @@
   </div>
 
 </address>
-<address class="px-1">
+<address class="contact__details__social">
   <app-header-social
     [socialCompany]="company.social"
-    [bgIsOrange]="true"
-  ></app-header-social>
+    [bgIsOrange]="true">
+  </app-header-social>
 </address>
 
