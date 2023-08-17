@@ -76,7 +76,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       },
       {
         path: '**',
-        redirectTo: 'vtc'
+        component: MainComponent
       },
 
     ])
