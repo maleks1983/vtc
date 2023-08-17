@@ -1,9 +1,9 @@
 :host {
-  min-width: 370px;;
-  min-height: 100vh;
+  min-width: 370px;
+  min-height: 100%;
   display: grid;
-  grid-template-rows: minmax(100px, max-content) max-content  minmax(20%, auto);
-  row-gap: .5%;
+  grid-template-rows: 100px max-content  minmax(20%, auto);
+  row-gap: .2%;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   box-shadow: 0 4px 10px rgba(249, 200, 70, 0.5);
   border-bottom: 2px solid #f55536;
   display: grid;

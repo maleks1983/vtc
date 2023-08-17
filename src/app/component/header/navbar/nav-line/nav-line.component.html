@@ -1,0 +1,49 @@
+<nav>
+  <div class="nav__menu">
+    <div class="nav__logo">
+      <div class="h-100 px-2">
+        <a class="nav__logo-a " [href]="">
+          <img [src]=logo alt="logo" class="img-fluid">
+        </a>
+      </div>
+    </div>
+    <div class="position-relative h-100">
+      <ul class="nav__content-ul px-2 m-0">
+        <li
+          (mouseenter)="openDropMenu()">
+          <a href="#">Послуги</a>
+        </li>
+        <li
+          (mouseenter)="closeDropMenu()">
+          <a routerLink="/price">Ціни</a>
+        </li>
+        <li>
+          <a routerLink="/serviceInfo">Про сервіс</a>
+        </li>
+        <li>
+          <a href="#">Контакти</a>
+        </li>
+      </ul>
+      <app-drop-menu
+        [servicesList]="services"
+        [hidden]="!isActive"
+        (mouseleave)="closeDropMenu()">
+      </app-drop-menu>
+    </div>
+  </div>
+
+
+  <form>
+    <div class="w-100 h-100 d-flex justify-content-center py-2">
+      <input type="text" name="search" class="rounded w-100">
+      <input type="image" src="../../../../../assets/img/search.svg" name="submit" alt="search" class="search-btn">
+    </div>
+  </form>
+
+  <button class="rounded my-2 h-auto"
+          [style.background-color]="btnColor">
+    Консультація
+  </button>
+
+</nav>
+<app-main-blackout *ngIf="isActive"></app-main-blackout>

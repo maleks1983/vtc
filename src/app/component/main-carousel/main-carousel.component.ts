@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
 import {ISlide} from "../../models/slide";
 
+
 @Component({
   selector: 'app-main-carousel',
   templateUrl: './main-carousel.component.html',
@@ -26,6 +27,8 @@ export class MainCarouselComponent implements OnInit {
 
   ngOnInit() {
     this.startSlideShow();
+
+
   }
 
   startSlideShow() {

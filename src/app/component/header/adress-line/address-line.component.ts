@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ICompany} from "../../../models/company";
 import {contactData} from "../../../data/companyData";
-import {style} from "@angular/animations";
 
 @Component({
   selector: 'app-address-line',

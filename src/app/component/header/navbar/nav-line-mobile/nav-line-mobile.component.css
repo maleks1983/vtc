@@ -18,8 +18,9 @@ nav {
 }
 
 .menu__mobile-btn {
-  background-color: inherit;
-  border: none;
+  background-color: #f55536;
+  border-radius: 20%;
+
 }
 
 .menu__mobile-btn svg {
@@ -37,6 +38,7 @@ form {
 .nav__menu {
   width: 80%;
   height: 100vh;
+  max-width: 400px;
   position: fixed;
   left: 0;
   top: 0;
@@ -44,6 +46,7 @@ form {
   flex-direction: column;
   z-index: 2;
   background-color: inherit;
+  filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));
 }
 
 .nav__logo {
@@ -64,6 +67,7 @@ h1 {
 }
 
 .nav__content-ul {
+
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -120,35 +124,19 @@ h1 {
   color: white;
 }
 
-
-/*.nav-logo:hover,*/
-/*.nav-menu li:hover a {*/
-/*  color: #f55536;*/
-/*}*/
-
-/*.nav-menu li:hover,*/
-/*.form-btn--cons:hover {*/
-/*  filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));*/
-/*}*/
-
-/*.nav-logo:hover,*/
-/*.form-btn--cons:hover,*/
-/*.nav-menu li:hover a {*/
-/*  transform: scale(120%);*/
-/*}*/
-
-
 .search-btn {
   width: 30px;
   height: 30px;
   transform: translateX(-130%) translateY(25%);
 }
 
-.form-btn--cons {
+.btn--cons {
+  display: none;
   background-color: rgb(249 200 70);
+  height: 100%;
 }
 
-.form-btn--cons:hover {
+.btn--cons:hover {
   background-color: #f55536;
   color: #fbfbff;
 }
@@ -157,25 +145,4 @@ h1 {
   display: none;
 }
 
-/*.nav-menu {*/
-/*  flex-grow: 1;*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: stretch;*/
-/*  justify-content: center;*/
-/*  padding-left: 0;*/
-/*}*/
 
-/*.nav-menu li {*/
-/*  padding: 0 3rem;*/
-/*  position: relative;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: center;*/
-/*  border-radius: 5%;*/
-/*}*/
-
-
-.btn--cons {
-  display: none;
-}

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {IService} from "../../../models/servicesCompany";
-import {services as sv} from "../../../data/servicesData";
-import {AppComponent} from "../../../app.component";
+import {IService} from "../../../../models/servicesCompany";
+import {services as sv} from "../../../../data/servicesData";
 
 
 @Component({
@@ -10,14 +9,18 @@ import {AppComponent} from "../../../app.component";
   styleUrls: ['./nav-line.component.css']
 })
 export class NavLineComponent implements OnInit {
+
   services: IService[] = [];
   isActive = false;
-  isActiveMenu = false;
+  logo = "./assets/img/logo.png";
+
+  btnColor = '#F9C846FF'
+  btnColorActive = '#f55536'
 
   ngOnInit(): void {
     this.services = sv;
-  }
 
+  }
 
   openDropMenu() {
     this.isActive = true;
@@ -28,13 +31,4 @@ export class NavLineComponent implements OnInit {
 
   }
 
-  openMenu() {
-    this.isActiveMenu = true;
-
-  }
-
-  closeMenu() {
-    this.isActiveMenu = false;
-
-  }
 }

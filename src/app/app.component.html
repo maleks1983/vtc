@@ -6,20 +6,21 @@
   </div>
   <div class="header__nav-line">
     <div class="header__nav-line-wrapper">
-      <app-nav-line></app-nav-line>
+      <app-nav-line-mobile *ngIf="mobileNavbar"></app-nav-line-mobile>
+      <app-nav-line *ngIf="!mobileNavbar"></app-nav-line>
     </div>
   </div>
 </header>
 <main>
   <div class="main-wrapper">
-<!--    <router-outlet></router-outlet>-->
+        <router-outlet></router-outlet>
   </div>
 </main>
 <footer>
   <div class="footer-wrapper">
-<!--    <app-footer-adress></app-footer-adress>-->
-<!--    <app-footer-service></app-footer-service>-->
-<!--    <app-footer-social></app-footer-social>-->
+    <!--    <app-footer-adress></app-footer-adress>-->
+    <!--    <app-footer-service></app-footer-service>-->
+    <!--    <app-footer-social></app-footer-social>-->
   </div>
 </footer>
 
