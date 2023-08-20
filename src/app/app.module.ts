@@ -26,6 +26,7 @@ import {NavLineMobileComponent} from "./component/header/navbar/nav-line-mobile/
 import {NavLineComponent} from "./component/header/navbar/nav-line/nav-line.component";
 import {ContactsComponent} from './component/pages/contacts/contacts.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { ServicesComponent } from './component/pages/services/services.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     MainBlackoutComponent,
     NavLineMobileComponent,
     ContactsComponent,
+    ServicesComponent,
 
   ],
   imports: [
@@ -72,6 +74,10 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       },
       {
         path: 'contacts',
+        component: ContactsComponent
+      },
+      {
+        path: 'services',
         component: ContactsComponent
       },
       {

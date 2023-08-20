@@ -2,7 +2,7 @@
   <div class="nav__menu">
     <div class="nav__logo" (mouseenter)="closeDropMenu()">
       <div class="h-100 px-2 d-flex align-items-stretch">
-        <a  [href]="'/'">
+        <a  [href]="'vtc'">
           <img [src]=logo alt="logo" class="img-fluid">
         </a>
       </div>
@@ -11,7 +11,7 @@
       <ul class="nav__content-ul px-2 m-0">
         <li
           (mouseenter)="openDropMenu()">
-          <a [href]="'/'">Послуги</a>
+          <a routerLink="/services">Послуги</a>
         </li>
         <li
           (mouseenter)="closeDropMenu()">
@@ -21,7 +21,7 @@
           <a routerLink="/serviceInfo">Про сервіс</a>
         </li>
         <li>
-          <a href="/contacts">Контакти</a>
+          <a routerLink="/contacts">Контакти</a>
         </li>
       </ul>
       <app-drop-menu

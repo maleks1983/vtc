@@ -26,27 +26,27 @@ export const contactData: ICompany = {
     facebook:
       {
         image: 'fab fa-facebook fa-1x',
-        src: '/'
+        src: 'vtc'
       },
     instagram:
       {
         image: 'fab fa-instagram fa-1x',
-        src: '/'
+        src: 'vtc'
       },
     telegram:
       {
         image: 'fab fa-telegram fa-1x',
-        src: '/'
+        src: 'vtc'
       },
     viber:
       {
         image: 'fab fa-viber fa-1x',
-        src: '/'
+        src: 'vtc'
       },
     whatsapp:
       {
         image: 'fab fa-whatsapp fa-1x',
-        src: '/'
+        src: 'vtc'
       }
 
   }
