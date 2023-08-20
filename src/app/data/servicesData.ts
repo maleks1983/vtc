@@ -3,7 +3,7 @@ import {IService} from "../models/servicesCompany";
 export const services: IService[] = [
   {
     id: 1,
-    name: 'Service 1',
+    name: 'Профілактичній ремонт',
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 1',
     description: '',
@@ -12,7 +12,7 @@ export const services: IService[] = [
   },
   {
     id: 2,
-    name: 'Service 2',
+    name: 'Чистка та ремонт трансмісій',
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 2',
     description: '',
@@ -21,7 +21,7 @@ export const services: IService[] = [
   },
   {
     id: 3,
-    name: 'Service 3',
+    name: 'Повний тюнінг',
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 3',
     description: '',
@@ -30,7 +30,7 @@ export const services: IService[] = [
   },
   {
     id: 4,
-    name: 'Service 4',
+    name: 'Заміна мастила та фільтрів',
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 4',
     description: '',
@@ -39,7 +39,7 @@ export const services: IService[] = [
   },
   {
     id: 5,
-    name: 'Service 5',
+    name: 'Монтаж та балансування шин',
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 5',
     description: '',
@@ -48,7 +48,7 @@ export const services: IService[] = [
   },
   {
     id: 6,
-    name: 'Service 6',
+    name: 'Ремонт гидроблока',
     src: './assets/img/services/avtoservis.jpg',
     alt: 'Service 6',
     description: '',

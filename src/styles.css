@@ -5,7 +5,9 @@
 
 html {
   height: 100%;
+
 }
+
 
 a {
   text-decoration: none;
@@ -23,7 +25,6 @@ body {
   font-size: 11px;
   line-height: 1.35;
   font-weight: bolder;
-
 }
 
 

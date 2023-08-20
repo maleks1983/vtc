@@ -65,7 +65,7 @@ address, ul {
 .contact__details__social {
   height: 100%;
   display: flex;
-  align-items: stretch;
+  justify-content: right;
 
 }
 
@@ -83,7 +83,8 @@ address, ul {
 
 @media (min-width: 725px) {
   :host {
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 40% 30% 1fr;
+    justify-items: stretch;
   }
 
   .header__addressLine__position {
@@ -108,6 +109,6 @@ address, ul {
   }
 
   .contact__details-locations:hover div {
-    transform: scale(130%);
+    transform: scale(130%) translateX(11%);
   }
 }

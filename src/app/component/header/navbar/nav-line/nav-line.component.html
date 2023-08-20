@@ -11,7 +11,7 @@
       <ul class="nav__content-ul px-2 m-0">
         <li
           (mouseenter)="openDropMenu()">
-          <a href="#">Послуги</a>
+          <a [href]="'/'">Послуги</a>
         </li>
         <li
           (mouseenter)="closeDropMenu()">
@@ -33,7 +33,7 @@
   </div>
 
 
-  <form>
+  <form class="py-1">
     <div class="w-100 h-100 d-flex justify-content-center py-2">
       <input type="text" name="search" class="rounded w-100">
       <input type="image" [src]="searchIcon" name="submit" alt="search" class="search-btn">

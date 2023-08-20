@@ -11,7 +11,7 @@ export class NavLineMobileComponent {
   services: IService[] = [];
   isActive = false;
   isActiveMenu = false;
-
+  searchIcon = './assets/img/search.svg';
 
   ngOnInit(): void {
     this.services = sv;

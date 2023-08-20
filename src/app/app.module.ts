@@ -8,7 +8,7 @@ import {AddressLineComponent} from './component/header/adress-line/address-line.
 import {MainCarouselComponent} from './component/main-carousel/main-carousel.component';
 import {MenuServicesComponentComponent} from './component/menu-services-component/menu-services-component.component';
 import {AboutCompanyComponent} from './component/about-company/about-company.component';
-import {FooterAdressComponent} from './component/footer/footer-adress/footer-adress.component';
+import {FooterAddressComponent} from './component/footer/footer-adress/footer-address.component';
 import {FooterServiceComponent} from './component/footer/footer-service/footer-service.component';
 import {FooterSocialComponent} from './component/footer/footer-social/footer-social.component';
 import {HeaderSocialComponent} from './component/header/header-social/header-social.component';
@@ -36,7 +36,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     MainCarouselComponent,
     MenuServicesComponentComponent,
     AboutCompanyComponent,
-    FooterAdressComponent,
+    FooterAddressComponent,
     FooterServiceComponent,
     FooterSocialComponent,
     HeaderSocialComponent,

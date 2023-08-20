@@ -11,8 +11,8 @@
   <div class="nav__menu" *ngIf="isActiveMenu">
     <div class="nav__logo">
       <div class="d-flex align-content-stretch px-2">
-        <a class="nav__logo-a" [href]="">
-          <img src="./assets/img/logo.png" alt="logo">
+        <a class="nav__logo-a" [href]="'/'">
+          <img [src]="'./assets/img/logo.png'" alt="logo">
         </a>
       </div>
       <h1 class="px-4">
@@ -23,7 +23,7 @@
       <ul class="nav__content-ul">
         <li
           (mouseenter)="openDropMenu()">
-          <a href="#">Послуги</a>
+          <a [href]="'/'">Послуги</a>
         </li>
         <li
           (mouseenter)="closeDropMenu()">
@@ -33,7 +33,7 @@
           <a routerLink="/serviceInfo">Про сервіс</a>
         </li>
         <li>
-          <a href="#">Контакти</a>
+          <a routerLink="/contacts">Контакти</a>
         </li>
       </ul>
       <app-drop-menu
@@ -48,7 +48,7 @@
   <form>
     <div class="w-100 h-100 d-flex justify-content-center">
       <input type="text" name="search" class="rounded w-100">
-      <input type="image" src="./assets/img/search.svg" name="submit" alt="search" class="search-btn">
+      <input type="image" [src]="searchIcon" name="submit" alt="search" class="search-btn">
     </div>
   </form>
 
