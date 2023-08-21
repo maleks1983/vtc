@@ -69,7 +69,7 @@ address, ul {
 
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
   :host {
     grid-template-columns: 25% 40% 35%;
   }
@@ -81,7 +81,7 @@ address, ul {
 }
 
 
-@media (min-width: 725px) {
+@media screen and (min-width: 725px) {
   :host {
     grid-template-columns: 40% 30% 1fr;
     justify-items: stretch;

@@ -1,16 +1,16 @@
 :host {
   min-width: 370px;
-  height: 100%;
+  min-height: 100%;
   display: grid;
-  grid-template-rows: 100px max-content  max-content;
+  grid-template-rows: 100px minmax(calc(100vh - 650px), max-content) 550px;
+  grid-template-columns: 1fr;
   row-gap: .1%;
 }
 
+
 header {
   position: sticky;
-  width: 100%;
   top: 0;
-  left: 0;
   z-index: 2;
   filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));
   border-bottom: 2px solid #f55536;
@@ -19,7 +19,8 @@ header {
   font-size: 1.2727em;
 }
 
-.main-wrapper{
+
+.main-wrapper {
   background: white;
 }
 
@@ -40,7 +41,6 @@ footer {
 
 footer,
 .header__nav-line {
-  /*background-color: rgb(249 200 70);*/
   background-color: #0a0908;
   color: #fbfbff;
 

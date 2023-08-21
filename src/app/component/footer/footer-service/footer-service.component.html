@@ -1,63 +1,67 @@
-<div class="footer-service position-relative pt-2">
-  <div class="d-flex justify-content-between a">
-    <div class="w-50 d-flex align-items-center my-auto footer__company">
-      <div class="mobile__gear" *ngIf="!isActive">
-        <img [src]="'./assets/img/gear.svg'" class="img-fluid footer-gear" alt="gear">
-      </div>
-      <section class="px-2 position-relative flex-grow-1 text-center flex-grow-1 flex-shrink-1 h-100">
-        <p>
-          "Кваліфікованість та впевненість у результаті є ключовими чеснотами нашої компанії."
-        </p>
-
-        <div class="show-div" *ngIf="isActive"
-             (click)="openDetails()">
-          <p>
-            "Ми працюємо не лише з засобом пересування та комфортного життя, а з транспортом, від якого щодня залежить
-            життя людини. Тому кожен його елемент має бути виконаний з суворим дотриманням всіх вимог.
-          </p>
-          <p>
-            Результат нашої роботи не підводить та не розчаровує, тож кожен знає, що у VTC працюють майстри своєї
-            справи, на яких можна покластись у навіть найскладніших ситуаціях."
-          </p>
-        </div>
-        <div>
-          <a class="dropdown-toggle" (click)="openDetails()"  role="button"></a>
-        </div>
-      </section>
+<div class="footer__service mx-2">
+  <div class="d-flex align-items-center my-auto footer__company">
+    <div class="mobile__gear" *ngIf="!isActive">
+      <img [src]="'./assets/img/gear.svg'" class="img-fluid footer-gear" alt="gear">
     </div>
-
-    <div class="w-50 d-flex justify-content-around">
-      <div class="d-flex align-items-center flex-column">
-        <div>
-          <h3>
-            Послуги
-          </h3>
-        </div>
-        <ul>
-          <li><a href="">Діагностика</a></li>
-          <li><a href="">Додаткові</a></li>
-          <li><a href="">Обслуговування</a></li>
-          <li><a href="">Ремонт</a></li>
-          <li><a href="">Шиномонтаж</a></li>
-        </ul>
+    <section class="px-2 flex-grow-1 text-center flex-grow-1 flex-shrink-1 h-100"
+             [class]="!isMobile?'position-relative':'position-static'">
+      <p>
+        "Кваліфікованість та впевненість у результаті є ключовими чеснотами нашої компанії."
+      </p>
+      <div class="show-div" *ngIf="isActive "
+           (click)="openDetails()">
+        <p>
+          "Ми працюємо не лише з засобом пересування та комфортного життя, а з транспортом, від якого щодня залежить
+          життя людини. Тому кожен його елемент має бути виконаний з суворим дотриманням всіх вимог.
+        </p>
+        <p>
+          Результат нашої роботи не підводить та не розчаровує, тож кожен знає, що у VTC працюють майстри своєї
+          справи, на яких можна покластись у навіть найскладніших ситуаціях."
+        </p>
       </div>
-      <div>
-        <div class="d-flex align-items-center flex-column">
-          <div>
-            <h3>
-              Недавні записи
-            </h3>
-          </div>
-          <ul>
-            <li><a href="">Заміна лобового скла</a></li>
-            <li><a href="">Балансування резини</a></li>
-            <li><a href="">Ремонт рульових рейок</a></li>
-            <li><a href="">Заміна зщеплення</a></li>
-            <li><a href="">Захист двигуна</a></li>
-          </ul>
-        </div>
+      <div class="btn__drop">
+        <a (click)="openDetails()" role="button">
+          <svg [class]="!isActive?'down':'up'"
+               xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill"
+               viewBox="0 0 16 16">
+            <path
+              d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+  </div>
+  <div class="d-flex  justify-content-around" *ngIf="!isActive || !isMobile"
+       [class]="!isMobile?'flex-grow-1':'flex-grow-0'">
+    <div class="d-flex align-items-center flex-column">
+      <h3>
+        Послуги
+      </h3>
+      <ul>
+        <li><a href="">Діагностика</a></li>
+        <li><a href="">Додаткові</a></li>
+        <li><a href="">Обслуговування</a></li>
+        <li><a href="">Ремонт</a></li>
+        <li><a href="">Шиномонтаж</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="d-flex align-items-center flex-column">
+        <h3>
+          Недавні записи
+        </h3>
+        <ul>
+          <li><a href="">Заміна лобового скла</a></li>
+          <li><a href="">Балансування резини</a></li>
+          <li><a href="">Ремонт рульових рейок</a></li>
+          <li><a href="">Заміна зщеплення</a></li>
+          <li><a href="">Захист двигуна</a></li>
+        </ul>
+
       </div>
     </div>
   </div>
 </div>
+
 

@@ -14,15 +14,15 @@
 
 <main>
   <div class="main-wrapper">
-        <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
   </div>
 </main>
 <footer>
   <div class="footer-wrapper">
-        <app-footer-adress></app-footer-adress>
-        <app-footer-service></app-footer-service>
-        <app-footer-social></app-footer-social>
+            <app-footer-adress></app-footer-adress>
+            <app-footer-service></app-footer-service>
+            <app-footer-social></app-footer-social>
   </div>
 </footer>
-
+<app-main-blackout *ngIf="isActiveMenu"></app-main-blackout>
 

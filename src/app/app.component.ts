@@ -9,12 +9,14 @@ import axios from "axios";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  mobileNavbar: boolean
+
+
+  private _mobileNavbar: boolean
 
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
-    this.mobileNavbar = window.innerWidth < 725;
+    this._mobileNavbar = window.innerWidth < 725;
   }
 
   title = 'vtc';
@@ -24,14 +26,31 @@ export class AppComponent implements OnInit {
   blackColor = '#0a0908';
   whiteColor = '#fbfbff';
   brownColor = '#2d231c';
+  private _isActiveMenu: boolean;
 
   constructor(private http: HttpClient) {
   }
 
   ngOnInit(): void {
-    this.mobileNavbar = window.innerWidth < 725;
+    this._mobileNavbar = window.innerWidth < 725;
+    this._isActiveMenu = false;
   }
 
+  get sizeScreen() {
+    return window.innerWidth;
+  }
+
+  get mobileNavbar(): boolean {
+    return this._mobileNavbar;
+  }
+
+  public get isActiveMenu(): boolean {
+    return this._isActiveMenu;
+  }
+
+  public set isActiveMenu(value: boolean) {
+    this._isActiveMenu = value;
+  }
 
 }
 

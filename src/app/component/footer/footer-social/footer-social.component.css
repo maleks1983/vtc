@@ -1,7 +1,7 @@
 p {
   margin: 0.25rem;
   color: inherit;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .footer-confidentially{
   color: darkgrey;
@@ -9,4 +9,7 @@ p {
 }
 address{
   transform: scale(150%);
+}
+.footer-confidentially p{
+  font-size: 1em;
 }

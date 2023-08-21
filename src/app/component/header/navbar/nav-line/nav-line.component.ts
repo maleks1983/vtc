@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {IService} from "../../../../models/servicesCompany";
 import {services as sv} from "../../../../data/servicesData";
-import {style} from "@angular/animations";
+import {AppComponent} from "../../../../app.component";
 
 
 @Component({
@@ -17,6 +17,9 @@ export class NavLineComponent implements OnInit {
 
   searchIcon = './assets/img/search.svg';
 
+  constructor(private app: AppComponent) {
+
+  }
 
   ngOnInit(): void {
     this.services = sv;
@@ -25,11 +28,12 @@ export class NavLineComponent implements OnInit {
 
   openDropMenu() {
     this.isActive = true;
+    this.app.isActiveMenu = true;
   }
 
   closeDropMenu() {
     this.isActive = false;
-
+    this.app.isActiveMenu = false;
   }
 
 }
