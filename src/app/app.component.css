@@ -19,6 +19,11 @@ header {
   font-size: 1.2727em;
 }
 
+.main-wrapper{
+  background: white;
+}
+
+
 .main-wrapper,
 .orange__address-wrapper,
 .header__nav-line-wrapper,

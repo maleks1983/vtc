@@ -6,13 +6,17 @@ import {IService} from "../../models/servicesCompany";
   templateUrl: './menu-services-component.component.html',
   styleUrls: ['./menu-services-component.component.css']
 })
-export class MenuServicesComponentComponent implements OnInit{
+export class MenuServicesComponentComponent implements OnInit {
 
   @Input() service: IService;
+  detail = false;
 
   ngOnInit(): void {
 
   }
 
 
+  openDetail() {
+    this.detail = !this.detail;
+  }
 }

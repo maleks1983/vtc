@@ -27,6 +27,7 @@ import {NavLineComponent} from "./component/header/navbar/nav-line/nav-line.comp
 import {ContactsComponent} from './component/pages/contacts/contacts.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { ServicesComponent } from './component/pages/services/services.component';
+import { BackgroundComponent } from './component/background/background.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { ServicesComponent } from './component/pages/services/services.component
     NavLineMobileComponent,
     ContactsComponent,
     ServicesComponent,
+    BackgroundComponent,
 
   ],
   imports: [

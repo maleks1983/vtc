@@ -34,4 +34,25 @@ h1, h2, h3, h4, h5 {
 }
 
 
+body:before{
+  width: 1000vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("./assets/img/background.png") center;
+  /*background-image:url("./assets/img/background.png");*/
+  background-size: 100vw;
+  opacity: 0.1;
 
+
+
+
+
+  /*background: repeating-linear-gradient(190deg, );*/
+
+
+
+  content: "";
+  z-index: -1;
+}

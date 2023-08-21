@@ -1,16 +1,24 @@
-<div class="container-sm company-service">
-  <div class="mx-2">
-    <img class="img-fluid"
+<div class="company-service">
+  <div class="h-100 w-100 ">
+    <img class="img-fluid p-2"
          [src]="service.src"
-         [alt]="service.alt" />
+         [alt]="service.alt"/>
   </div>
-  <h3>
-    {{service.name}}
-  </h3>
-  <p class="text-center">
-    {{service.description}}
-  </p>
-  <input type="button" value="Докладніше" >
+  <section class="d-flex flex-column align-items-center text-center justify-content-around py-2">
+    <h4>
+      {{service.name}}
+    </h4>
+    <p class="text-center flex-grow-1 w-100" *ngIf="detail">
+      {{service.description}}
+    </p>
+    <div>
+      <input type="button" value="{{!detail?'Докладніше':'Згорнути'}}"
+             (click)="openDetail()">
+
+    </div>
+  </section>
+
+
 </div>
 
 

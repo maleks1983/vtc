@@ -1,11 +1,11 @@
-<div class="d-flex flex-column w-100 h-100 align-items-stretch">
+<div class="d-flex flex-column w-100 h-100 align-items-stretch gap-1">
   <div class="main-slider">
     <div class="main-slider-wrapper ">
       <app-main-carousel [carouselList]="carouselList"></app-main-carousel>
     </div>
   </div>
   <div class="main-service">
-    <div class="h-100 py-4 d-flex flex-wrap justify-content-center gap-3">
+    <div class="w-100 d-flex flex-wrap justify-content-center gap-3">
       <app-menu-services-component
         *ngFor="let ser of services"
         [service]="ser">

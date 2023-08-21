@@ -1,31 +1,47 @@
 :host {
   flex-basis: 100%;
+
+
 }
 
 
 .company-service {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  justify-items: center;
   align-items: center;
   border-radius: 3%;
-  padding: 2rem 0;
   background-color: rgb(249 200 70);
+}
+
+section {
+  min-height: 150px;
+}
+
+.company-service:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  z-index: 1;
 }
 
 input {
   background-color: #2d231c;
   color: #fbfbff;
   border-radius: 1rem;
+  height: 50px;
+  font-size: 1.4em;
+
 }
 
 
-
-
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
   :host {
     flex-basis: 45%;
-    height: 50%;
+    min-height: 300px;
+    margin: 0;
+
   }
 
 }
@@ -33,7 +49,7 @@ input {
 @media (min-width: 725px) {
   :host {
     flex-basis: 30%;
-    height: 50%;
+
 
   }
 }

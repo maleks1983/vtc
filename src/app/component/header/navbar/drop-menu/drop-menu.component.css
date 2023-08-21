@@ -7,10 +7,11 @@
   z-index: 1;
   background-color: #2d231c;
   filter: drop-shadow(0 10px 8px rgba(249, 200, 70, 0.5));
+  border-radius: 0 0 3% 3%;
+  border: 1px solid #e0e0e0;
 }
 
 ul {
-
   padding-left: 0;
   display: flex;
   flex-direction: column;
@@ -69,8 +70,6 @@ li:hover:before {
 
   ul {
     padding-left: 0;
-    border: 1px solid #e0e0e0;
-    border-radius: 0 0 3% 3%;
     margin: 0;
   }
 
