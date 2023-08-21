@@ -17,7 +17,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RouterModule, RouterOutlet} from "@angular/router";
 import {TableServicesProductComponent} from './component/pages/table-services-product/table-services-product.component';
 import {MainComponent} from './component/pages/main/main.component';
-
 import {AboutServicePageComponent} from './component/pages/about-service-page/about-service-page.component';
 import {SafeUrlPipe} from './pipe/safe-url.pipe';
 import {MainBlackoutComponent} from './component/main-blackout/main-blackout.component';
@@ -25,9 +24,8 @@ import {DropMenuComponent} from "./component/header/navbar/drop-menu/drop-menu.c
 import {NavLineMobileComponent} from "./component/header/navbar/nav-line-mobile/nav-line-mobile.component";
 import {NavLineComponent} from "./component/header/navbar/nav-line/nav-line.component";
 import {ContactsComponent} from './component/pages/contacts/contacts.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from "@angular/common/http";
 import {ServicesComponent} from './component/pages/services/services.component';
-import {BackgroundComponent} from './component/background/background.component';
 
 
 @NgModule({
@@ -51,8 +49,6 @@ import {BackgroundComponent} from './component/background/background.component';
     NavLineMobileComponent,
     ContactsComponent,
     ServicesComponent,
-    BackgroundComponent,
-
   ],
   imports: [
     BrowserModule,
