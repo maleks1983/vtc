@@ -1,7 +1,6 @@
 .main-slider {
   background-color: #fbfbff;
   flex: 0 0 500px;
-
 }
 
 .main-slider-wrapper {
@@ -19,4 +18,6 @@
 
 }
 
-
+.main__company{
+  flex-shrink: 1;
+}

@@ -1,8 +1,12 @@
 p {
   margin: 0.25rem;
   color: inherit;
+  font-size: 1.5em;
 }
 .footer-confidentially{
   color: darkgrey;
   text-align: center;
+}
+address{
+  transform: scale(150%);
 }

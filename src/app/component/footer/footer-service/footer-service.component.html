@@ -1,24 +1,28 @@
 <div class="footer-service position-relative pt-2">
-  <div class="d-flex justify-content-between">
-    <div class="w-50 d-flex">
-      <div class="d-flex align-items-center w-25">
-        <img src="../../../../assets/img/gear.svg" class="img-fluid footer-gear" alt="gear">
+  <div class="d-flex justify-content-between a">
+    <div class="w-50 d-flex align-items-center my-auto footer__company">
+      <div class="mobile__gear" *ngIf="!isActive">
+        <img [src]="'./assets/img/gear.svg'" class="img-fluid footer-gear" alt="gear">
       </div>
-      <section class="px-2 position-relative flex-grow-1 text-center">
+      <section class="px-2 position-relative flex-grow-1 text-center flex-grow-1 flex-shrink-1 h-100">
         <p>
-          "Кваліфікованість та впевненість у результаті є ключовими чеснотами нашої компанії.
+          "Кваліфікованість та впевненість у результаті є ключовими чеснотами нашої компанії."
         </p>
-        <div class="show-div">
+
+        <div class="show-div" *ngIf="isActive"
+             (click)="openDetails()">
           <p>
-            Ми працюємо не лише з засобом пересування та комфортного життя, а з транспортом, від якого щодня залежить
-            життя людини. Тому кожен його елемент має бути виконаний з су- ворим дотриманням всіх вимог.
+            "Ми працюємо не лише з засобом пересування та комфортного життя, а з транспортом, від якого щодня залежить
+            життя людини. Тому кожен його елемент має бути виконаний з суворим дотриманням всіх вимог.
           </p>
           <p>
-            Результат нашої роботи не підводить та не розчаровує, тож кожен знає, що у VTC працю- ють майстри своєї
-            справи, на яких можна по- кластись у навіть найскладніших ситуаціях."
+            Результат нашої роботи не підводить та не розчаровує, тож кожен знає, що у VTC працюють майстри своєї
+            справи, на яких можна покластись у навіть найскладніших ситуаціях."
           </p>
         </div>
-
+        <div>
+          <a class="dropdown-toggle" (click)="openDetails()"  role="button"></a>
+        </div>
       </section>
     </div>
 

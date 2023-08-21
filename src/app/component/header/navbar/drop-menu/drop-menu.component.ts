@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Output} from '@angular/core';
 import {IService} from "../../../../models/servicesCompany";
 
 @Component({
@@ -9,8 +9,9 @@ import {IService} from "../../../../models/servicesCompany";
 export class DropMenuComponent {
 
   @Input() servicesList: IService[];
-  closeDropMenu() {
 
-  }
+
+
+
 
 }

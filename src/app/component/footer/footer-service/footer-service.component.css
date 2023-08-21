@@ -1,3 +1,9 @@
+:host {
+  width: 100%;
+  height: 100%;
+}
+
+
 p, h2, h3 {
   color: rgb(249 200 70);
 }
@@ -9,19 +15,21 @@ p {
   text-indent: 1.5em;
 }
 
+.mobile__gear {
+  display: none;
+}
+
 section, a {
-  font-size: 0.8rem;
+  font-size: 1.45em;
 }
 
 .show-div {
-  display: none;
+  display: block;
   position: absolute;
   left: 0;
-  bottom: 0;
-}
-
-section:hover .show-div {
-  display: block;
+  top: 0;
+  background: #0a0908;
+  transform: translateY(-40%);
 }
 
 ul {
@@ -57,3 +65,13 @@ ul {
 .footer-gear:hover {
   animation: rotate-gear 2s;
 }
+
+@media screen and (min-width: 725px) {
+  .mobile__gear {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+  }
+}
+
+

@@ -2,7 +2,7 @@
   min-width: 370px;
   height: 100%;
   display: grid;
-  grid-template-rows: 100px 100%  350px;
+  grid-template-rows: 100px max-content  max-content;
   row-gap: .1%;
 }
 

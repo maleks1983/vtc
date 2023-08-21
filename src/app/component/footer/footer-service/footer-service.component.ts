@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-footer-service',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer-service.component.css']
 })
 export class FooterServiceComponent {
+
+  isActive = false;
+
+  openDetails() {
+    this.isActive = !this.isActive;
+  }
 
 }

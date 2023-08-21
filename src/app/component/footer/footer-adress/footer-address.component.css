@@ -1,9 +1,16 @@
+:host{
+  width: 100%;
+  height: 100%;
+
+}
+
 h2, h3, h4, h5 {
   color: rgb(249 200 70);
 }
 
 p {
   margin: 0.25rem;
+  font-size: 1.7em;
 }
 
 
@@ -11,7 +18,7 @@ p {
   color: rgb(249 200 70);
 }
 
-.address-image img {
+img {
   fill: rgb(249 200 70);
 }
 
@@ -29,26 +36,30 @@ p {
   justify-items: center;
 }
 
-.footer-telephone--p {
+.footer-telephone--p,
+.footer-address--p,
+.footer-schedule--p {
   display: none;
+  position: absolute;
+  width: max-content;
+
+}
+.footer-telephone--p{
+  left: 0
 }
 
 .footer-address--p {
-  display: none;
+  left: -50%;
 }
 
 .footer-schedule--p {
-  display: none;
+  right: 0;
 }
 
-.footer-telephone:hover .footer-telephone--p {
+.footer-telephone:hover .footer-telephone--p,
+.footer-address:hover .footer-address--p,
+.footer-schedule:hover .footer-schedule--p
+{
   display: block;
 }
 
-.footer-address:hover .footer-address--p {
-  display: block;
-}
-
-.footer-schedule:hover .footer-schedule--p {
-  display: block;
-}

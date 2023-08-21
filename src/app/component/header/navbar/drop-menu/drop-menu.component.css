@@ -65,7 +65,7 @@ li:hover:before {
     top: 140%;
     left: -55px;
     height: max-content;
-    width: calc(50% + 55px);
+    max-width: 380px;
   }
 
   ul {
