@@ -18,7 +18,6 @@ export class NavLineMobileComponent {
 
   }
 
-
   openDropMenu() {
     this.isActive = true;
   }

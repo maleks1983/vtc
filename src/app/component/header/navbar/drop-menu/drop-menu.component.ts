@@ -9,7 +9,8 @@ import {IService} from "../../../../models/servicesCompany";
 export class DropMenuComponent {
 
   @Input() servicesList: IService[];
+  closeDropMenu() {
 
-
+  }
 
 }
