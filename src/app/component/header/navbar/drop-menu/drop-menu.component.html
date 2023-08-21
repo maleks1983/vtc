@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let sv of servicesList; index as i">
-    <a routerLink="sv.href">
+    <a routerLink="{{sv.href}}">
       {{sv.name}}
     </a>
   </li>
