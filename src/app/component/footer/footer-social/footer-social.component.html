@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-around py-4"
-     [class]="isMobile?'flex-column':'flex-row'">
+     [class]="getIsMobileWidth()?'flex-column':'flex-row'">
   <div class="d-flex flex-column align-items-center text-center">
     <div>
       <p class="text-uppercase">
@@ -9,7 +9,7 @@
     <address class="my-3">
       <app-header-social
         [socialCompany]="company.social"
-        [bgIsOrange]="false"
+        [bgIsOrange]="true"
       ></app-header-social>
     </address>
   </div>

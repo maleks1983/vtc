@@ -36,6 +36,8 @@ header {
 
 footer {
   border-top: 2px solid #f55536;
+  display: flex;
+  flex-direction: column;
 
 }
 

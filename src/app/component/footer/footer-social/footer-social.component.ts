@@ -11,15 +11,18 @@ import {AppComponent} from "../../../app.component";
 export class FooterSocialComponent implements OnInit {
 
   company: ICompany
-  isMobile: boolean;
 
-  constructor(private app: AppComponent) {
+
+  constructor() {
 
   }
 
   ngOnInit(): void {
     this.company = contactData;
-    this.isMobile = this.app.sizeScreen < 500;
+  }
 
+
+  getIsMobileWidth() {
+    return window.innerWidth < 500;
   }
 }

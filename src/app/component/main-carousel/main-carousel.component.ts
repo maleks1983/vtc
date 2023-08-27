@@ -23,6 +23,8 @@ import {ISlide} from "../../models/slide";
 export class MainCarouselComponent implements OnInit {
   @Input() carouselList: ISlide[];
   currentSlideImage = 0;
+  startPositionX: number;
+  endPositionX: number;
 
 
   ngOnInit() {
@@ -70,6 +72,24 @@ export class MainCarouselComponent implements OnInit {
     this.carouselList[this.currentSlideImage].active = true;
   }
 
+
+  getStartPositionX($event: TouchEvent) {
+    this.startPositionX = $event.touches[0].clientX;
+  }
+
+  getEndPositionX($event: TouchEvent) {
+    this.endPositionX = $event.touches[0].clientX;
+  }
+
+  slideImage() {
+    if (this.startPositionX < this.endPositionX) {
+      this.nextSlideImage();
+    }
+    else if (this.startPositionX > this.endPositionX)
+    {
+      this.previousSlideImage();
+    }
+  }
 }
 
 

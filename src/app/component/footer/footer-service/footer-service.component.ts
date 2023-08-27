@@ -13,14 +13,15 @@ export class FooterServiceComponent implements OnInit {
 
   isActive = false;
 
-  isMobile: boolean
-
   ngOnInit(): void {
-    this.isMobile = this.app.mobileNavbar;
   }
 
   openDetails() {
     this.isActive = !this.isActive;
+  }
+
+  getIsMobileWidth() {
+    return window.innerWidth < 500;
   }
 
 

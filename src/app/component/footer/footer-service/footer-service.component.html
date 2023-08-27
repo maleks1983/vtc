@@ -4,7 +4,7 @@
       <img [src]="'./assets/img/gear.svg'" class="img-fluid footer-gear" alt="gear">
     </div>
     <section class="px-2 flex-grow-1 text-center flex-grow-1 flex-shrink-1 h-100"
-             [class]="!isMobile?'position-relative':'position-static'">
+             [class]="!getIsMobileWidth()?'position-relative':'position-static'">
       <p>
         "Кваліфікованість та впевненість у результаті є ключовими чеснотами нашої компанії."
       </p>
@@ -32,8 +32,8 @@
       </div>
     </section>
   </div>
-  <div class="d-flex  justify-content-around" *ngIf="!isActive || !isMobile"
-       [class]="!isMobile?'flex-grow-1':'flex-grow-0'">
+  <div class="d-flex  justify-content-around" *ngIf="!isActive || !getIsMobileWidth()"
+       [class]="!getIsMobileWidth()?'flex-grow-1':'flex-grow-0'">
     <div class="d-flex align-items-center flex-column">
       <h3>
         Послуги
